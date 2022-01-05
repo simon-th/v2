@@ -1,5 +1,6 @@
 import * as React from 'react';
 import portrait from '../images/portrait.jpg';
+import AboutInfo from '../content/about.json';
 
 function WelcomeHeader() {
   return (
@@ -12,16 +13,30 @@ function WelcomeHeader() {
         />
       </div>
       <div className="h-auto flex flex-col justify-center">
-        <p className="text-3xl md:text-4xl xl:text-6xl font-bold">Hi,</p>
+        <p className="text-3xl md:text-4xl xl:text-6xl font-bold">
+          {AboutInfo.welcomeLine1}
+        </p>
         <h1 className="text-3xl md:text-4xl xl:text-6xl pb-1 font-bold">
-          I&apos;m Simon Hoque.
+          {AboutInfo.welcomeLine2}
         </h1>
         <h2 className="text-xl xl:text-2xl font-semibold">
-          Software Engineer @ Amazon
+          {AboutInfo.welcomeSubtext}
         </h2>
       </div>
     </div>
   );
+}
+
+function getIntro(): JSX.Element[] {
+  const intro: JSX.Element[] = [];
+  AboutInfo.intro.forEach((paragraph: string) => {
+    intro.push(<p className="text-lg mb-4">{paragraph}</p>);
+  });
+  return intro;
+}
+
+function WelcomeIntro() {
+  return <div>{getIntro()}</div>;
 }
 
 function IndexPage() {
@@ -29,10 +44,7 @@ function IndexPage() {
     <main>
       <div className="container mx-auto py-20">
         <WelcomeHeader />
-        <p className="text-lg">
-          Hi! My name is Simon and I&apos;m a recently graduated software
-          engineer based in Austin, TX. Stay tuned for updates to this site!
-        </p>
+        <WelcomeIntro />
       </div>
     </main>
   );

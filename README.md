@@ -1,9 +1,14 @@
 # Gatsby Starter
 
-This repository contains by preferred React dev setup configured for a minimal Gatsby website. It contains a minimal Gatsby starter created with `gatsby new` refactored to use TypeScript, ESLint configured with the AirBnb and Prettier plugins, Prettier for formatting code, and a Dockerfile and .devcontainer setup for remote development on VSCode. Few things:
-* `gatsby-plugin-typescript` is automatically included in gatsby so it's not included in this setup, explicitly include it in `gatsby-config.js` if you need to configure specific options.
-* `gatsby-plugin-eslint` is not included so that the default Gastby ESLint config is not entirely overwritten and keeps the required rules.
-* The `npm run build` script is modified to type check (Gatsby does not do this by default despite building TypeScript), format and lint beforehand. To just run Gatsby's build, use `npx gatsby build`.
+This repository contains by preferred React dev setup configured for a minimal Gatsby website.
+
+It contains a minimal Gatsby starter created with `gatsby new` refactored to use TypeScript, ESLint configured with the AirBnb and Prettier plugins, Prettier for formatting code, and a Dockerfile and .devcontainer setup for remote development on VSCode.
+
+Few things:
+
+- `gatsby-plugin-typescript` is automatically included in gatsby so it's not included in this setup, explicitly include it in `gatsby-config.js` if you need to configure specific options.
+- `gatsby-plugin-eslint` is not included so that the default Gastby ESLint config is not entirely overwritten and keeps the required rules.
+- The `npm run build` script is modified to type check (Gatsby does not do this by default despite building TypeScript), format and lint beforehand. To just run Gatsby's build, use `npx gatsby build`.
 
 # README from Gatsby
 
@@ -55,8 +60,8 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 
 # Resources I used
 
-* Help with setting up TypeScript: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-gatsby-project-with-typescript
-* Help with setting up ESLint: https://medium.com/@stojanpeshov/how-to-setup-gatsbyjs-starter-with-typescript-eslint-prettier-269b1a0a812f
-* Help with setting up tsconfig.json with ESLint: https://stackoverflow.com/a/68686975
-* Understanding how Gatsby works with ESLint: https://www.gatsbyjs.com/docs/how-to/custom-configuration/eslint/
-* Help with Dockerfile: https://github.com/gatsbyjs/gatsby/issues/4126
+- Help with setting up TypeScript: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-gatsby-project-with-typescript
+- Help with setting up ESLint: https://medium.com/@stojanpeshov/how-to-setup-gatsbyjs-starter-with-typescript-eslint-prettier-269b1a0a812f
+- Help with setting up tsconfig.json with ESLint: https://stackoverflow.com/a/68686975
+- Understanding how Gatsby works with ESLint: https://www.gatsbyjs.com/docs/how-to/custom-configuration/eslint/
+- Help with Dockerfile: https://github.com/gatsbyjs/gatsby/issues/4126

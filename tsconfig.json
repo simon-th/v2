@@ -13,5 +13,13 @@
     "noUnusedParameters": true,
     "removeComments": false
   },
-  "include": ["./src/**/*", ".eslintrc.js", "gatsby-config.js", "gatsby-browser.js"]
+  "include": [
+    "src/**/*",
+    ".eslintrc.js",
+    "declarations.d.ts",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "gatsby-config.js",
+    "gatsby-browser.js"
+  ]
 }

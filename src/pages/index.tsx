@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 
 function WelcomeHeader() {
   return (
-    <div className="h-fit flex flex-col md:flex-row pb-7">
+    <div className="h-fit flex flex-col md:flex-row pb-7 font-['Public_Sans']">
       <div className="flex flex-row md:flex-col justify-center pb-7 pr-0 md:pr-7 md:pb-0">
         <img
           src={portrait}

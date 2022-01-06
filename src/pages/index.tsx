@@ -1,7 +1,7 @@
 import * as React from 'react';
 import portrait from '../images/portrait.jpg';
 import AboutInfo from '../content/about.json';
-import Navbar from '../components/Navbar';
+import Layout from '../components/Layout';
 
 function WelcomeHeader() {
   return (
@@ -44,13 +44,10 @@ function WelcomeIntro() {
 
 function IndexPage() {
   return (
-    <main className="min-h-screen h-screen max-h-full">
-      <Navbar />
-      <div className="container mx-auto py-20 xl:pt-32 xl:pb-auto">
-        <WelcomeHeader />
-        <WelcomeIntro />
-      </div>
-    </main>
+    <Layout>
+      <WelcomeHeader />
+      <WelcomeIntro />
+    </Layout>
   );
 }
 

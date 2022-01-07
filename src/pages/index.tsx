@@ -22,15 +22,9 @@ function WelcomeHeader(props: WelcomeHeaderProps) {
         />
       </div>
       <div className="h-auto flex flex-col justify-center">
-        <p className="text-2xl md:text-4xl xl:text-6xl xxl:text-8xl font-bold">
-          {welcomeLine1}
-        </p>
-        <h1 className="text-2xl md:text-4xl xl:text-6xl xxl:text-8xl pb-1 font-bold">
-          {welcomeLine2}
-        </h1>
-        <h2 className="text-md xl:text-2xl xxl:4xl font-semibold">
-          {welcomeSubtext}
-        </h2>
+        <p className="text-2xl md:text-4xl font-bold">{welcomeLine1}</p>
+        <h1 className="text-2xl md:text-4xl pb-1 font-bold">{welcomeLine2}</h1>
+        <h2 className="text-md md:text-2xl font-semibold">{welcomeSubtext}</h2>
       </div>
     </div>
   );

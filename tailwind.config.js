@@ -10,6 +10,9 @@ module.exports = {
         xl: '15rem',
       },
     },
+    fontFamily: {
+      sans: ['Public Sans', '-apple-system', 'system-ui', 'Roboto'],
+    },
   },
   plugins: [],
 };

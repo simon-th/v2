@@ -1,11 +1,19 @@
 import * as React from 'react';
 import portrait from '../images/portrait.jpg';
-import AboutInfo from '../content/about.json';
 import Layout from '../components/Layout';
+import WelcomeIntro from '../components/WelcomeIntro';
+import { buildHomepageCard } from '../components/Card';
 
-function WelcomeHeader() {
+interface WelcomeHeaderProps {
+  welcomeLine1: string;
+  welcomeLine2: string;
+  welcomeSubtext: string;
+}
+
+function WelcomeHeader(props: WelcomeHeaderProps) {
+  const { welcomeLine1, welcomeLine2, welcomeSubtext } = props;
   return (
-    <div className="h-fit flex flex-col md:flex-row pb-7 font-['Public_Sans']">
+    <div className="h-fit flex flex-col md:flex-row pb-7">
       <div className="flex flex-row md:flex-col justify-center pb-7 pr-0 md:pr-7 md:pb-0">
         <img
           src={portrait}
@@ -15,40 +23,48 @@ function WelcomeHeader() {
       </div>
       <div className="h-auto flex flex-col justify-center">
         <p className="text-2xl md:text-4xl xl:text-6xl xxl:text-8xl font-bold">
-          {AboutInfo.welcomeLine1}
+          {welcomeLine1}
         </p>
         <h1 className="text-2xl md:text-4xl xl:text-6xl xxl:text-8xl pb-1 font-bold">
-          {AboutInfo.welcomeLine2}
+          {welcomeLine2}
         </h1>
         <h2 className="text-md xl:text-2xl xxl:4xl font-semibold">
-          {AboutInfo.welcomeSubtext}
+          {welcomeSubtext}
         </h2>
       </div>
     </div>
   );
 }
 
-function getIntro(): JSX.Element[] {
-  const intro: JSX.Element[] = [];
-  AboutInfo.intro.forEach((paragraph: string) => {
-    intro.push(
-      <p className="text-md md:text-lg xxl:text-xl mb-4">{paragraph}</p>
-    );
-  });
-  return intro;
-}
-
-function WelcomeIntro() {
-  return <div>{getIntro()}</div>;
-}
-
-function IndexPage() {
+export default function IndexPage() {
   return (
     <Layout>
-      <WelcomeHeader />
+      <WelcomeHeader
+        welcomeLine1="Hi,"
+        welcomeLine2="I'm Simon Hoque."
+        welcomeSubtext="Software Engineer @ Amazon"
+      />
       <WelcomeIntro />
+      <h2 className="text-xl md:text-2xl font-semibold mt-12">
+        Select Projects
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-7">
+        {buildHomepageCard({
+          headerContent: 'Personal Website v2',
+          bodyContent: "The one you're looking at right now!",
+          footerContent: 'React, Gatsby and Tailwind CSS',
+        })}
+        {buildHomepageCard({
+          headerContent: 'Personal Website v2',
+          bodyContent: "The one you're looking at right now!",
+          footerContent: 'React, Gatsby and Tailwind CSS',
+        })}
+        {buildHomepageCard({
+          headerContent: 'Personal Website v2',
+          bodyContent: "The one you're looking at right now!",
+          footerContent: 'React, Gatsby and Tailwind CSS',
+        })}
+      </div>
     </Layout>
   );
 }
-
-export default IndexPage;

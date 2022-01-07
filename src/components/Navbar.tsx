@@ -119,7 +119,7 @@ function MenuBar() {
   );
 }
 
-function Navbar() {
+export default function Navbar() {
   const [menuButtonClicked, setMenuButtonClicked] = React.useState(false);
   return (
     <nav className="bg-black">
@@ -140,5 +140,3 @@ function Navbar() {
     </nav>
   );
 }
-
-export default Navbar;

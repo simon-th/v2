@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function WelcomeIntro() {
+  const linkHoverEffectClass =
+    'relative after:absolute after:bg-gray-400 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300';
   const paragraphClass = 'text-md md:text-lg xxl:text-xl mb-4';
   return (
     <div>
@@ -14,7 +16,7 @@ export default function WelcomeIntro() {
         In my free time, I really enjoy{' '}
         <span>
           <a
-            className="underline hover:text-gray-700"
+            className={linkHoverEffectClass}
             href="https://www.simon-th.github.io/photo"
           >
             photography
@@ -24,7 +26,7 @@ export default function WelcomeIntro() {
         also love{' '}
         <span>
           <a
-            className="underline hover:text-gray-700"
+            className={linkHoverEffectClass}
             href="https://www.simon-th.github.io/travel"
           >
             traveling

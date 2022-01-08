@@ -2,7 +2,7 @@ import * as React from 'react';
 import portrait from '../images/portrait.jpg';
 import Layout from '../components/Layout';
 import WelcomeIntro from '../components/WelcomeIntro';
-import { buildHomepageCard } from '../components/Card';
+import HomepageCard from '../components/HomepageCard';
 
 interface WelcomeHeaderProps {
   welcomeLine1: string;
@@ -42,22 +42,22 @@ export default function IndexPage() {
       <h2 className="text-xl md:text-2xl font-semibold mt-12">
         Select Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-7">
-        {buildHomepageCard({
-          headerContent: 'Personal Website v2',
-          bodyContent: "The one you're looking at right now!",
-          footerContent: 'React, Gatsby and Tailwind CSS',
-        })}
-        {buildHomepageCard({
-          headerContent: 'Personal Website v2',
-          bodyContent: "The one you're looking at right now!",
-          footerContent: 'React, Gatsby and Tailwind CSS',
-        })}
-        {buildHomepageCard({
-          headerContent: 'Personal Website v2',
-          bodyContent: "The one you're looking at right now!",
-          footerContent: 'React, Gatsby and Tailwind CSS',
-        })}
+      <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-4 pt-7">
+        <HomepageCard
+          headerContent="Personal Website v2"
+          bodyContent="The one you're looking at right now!"
+          footerContent="React, Gatsby and Tailwind CSS"
+        />
+        <HomepageCard
+          headerContent="Personal Website v2"
+          bodyContent="The one you're looking at right now!"
+          footerContent="React, Gatsby and Tailwind CSS"
+        />
+        <HomepageCard
+          headerContent="Personal Website v2"
+          bodyContent="The one you're looking at right now!"
+          footerContent="React, Gatsby and Tailwind CSS"
+        />
       </div>
     </Layout>
   );

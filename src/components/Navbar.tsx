@@ -91,7 +91,7 @@ function MobileMenu(props: VisibilityProps) {
       <div className="px-2 pt-2 pb-3 space-y-1">
         {getNavLinks(
           defaultLinks,
-          'block text-sm text-white font-semibold hover:bg-gray-800 px-3 py-2 rounded-md'
+          'block text-sm text-white font-semibold hover:bg-gray-800 px-3 py-2 rounded-md transition ease-in-out'
         )}
       </div>
     </div>
@@ -112,7 +112,7 @@ function MenuBar() {
       <div className="flex space-x-8">
         {getNavLinks(
           defaultLinks,
-          'block text-sm text-white font-semibold hover:bg-gray-800 px-3 py-2 rounded-md'
+          'block text-sm text-white font-semibold hover:bg-gray-800 px-3 py-2 rounded-md transition ease-in-out'
         )}
       </div>
     </div>

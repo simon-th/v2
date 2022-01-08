@@ -1,9 +1,7 @@
 import React from 'react';
+import { paragraphClass, linkHoverEffectClass } from '../styles/common-styles';
 
 export default function WelcomeIntro() {
-  const linkHoverEffectClass =
-    'relative after:absolute after:bg-gray-400 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300';
-  const paragraphClass = 'text-md md:text-lg xxl:text-xl mb-4';
   return (
     <div>
       <p className={paragraphClass}>
@@ -22,8 +20,8 @@ export default function WelcomeIntro() {
             photography
           </a>
         </span>
-        , bouldering (when I&apos;m not injured...), and exploring Austin. I
-        also love{' '}
+        , bouldering (when I&apos;m not injured...), and exploring the
+        coffeeshops and streets of Austin. I also love{' '}
         <span>
           <a
             className={linkHoverEffectClass}

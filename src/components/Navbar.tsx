@@ -2,10 +2,14 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const defaultLinks: NavBarLinkProps[] = [
-  { label: 'About', url: '/#' },
-  { label: 'Experience', url: '/#' },
-  { label: 'Projects', url: '/#' },
+  { label: 'Home', url: '/' },
+  { label: 'Experience', url: '/experience' },
+  { label: 'Projects', url: '/projects' },
 ];
+
+const navbarHoverStyle = 'hover:bg-gray-800 hover:scale-1';
+const navbarBaseStyle =
+  'block text-sm font-semibold px-3 py-2 rounded-md transition ease-in-out';
 
 interface MobileMenuButtonProps {
   onClick: () => void;
@@ -91,7 +95,7 @@ function MobileMenu(props: VisibilityProps) {
       <div className="px-2 pt-2 pb-3 space-y-1">
         {getNavLinks(
           defaultLinks,
-          'block text-sm text-white font-semibold hover:bg-gray-800 px-3 py-2 rounded-md transition ease-in-out'
+          `${navbarBaseStyle} ${navbarHoverStyle} bg-black`
         )}
       </div>
     </div>
@@ -101,7 +105,7 @@ function MobileMenu(props: VisibilityProps) {
 function NavBrand() {
   return (
     <div className="flex-shrink-0 flex items-center">
-      <h1 className="text-xl text-white font-bold">Simon Hoque</h1>
+      <h1 className="text-xl font-bold">Simon Hoque</h1>
     </div>
   );
 }
@@ -110,10 +114,7 @@ function MenuBar() {
   return (
     <div className="hidden sm:block">
       <div className="flex space-x-8">
-        {getNavLinks(
-          defaultLinks,
-          'block text-sm text-white font-semibold hover:bg-gray-800 px-3 py-2 rounded-md transition ease-in-out'
-        )}
+        {getNavLinks(defaultLinks, `${navbarBaseStyle} ${navbarHoverStyle}`)}
       </div>
     </div>
   );
@@ -122,7 +123,7 @@ function MenuBar() {
 export default function Navbar() {
   const [menuButtonClicked, setMenuButtonClicked] = React.useState(false);
   return (
-    <nav className="bg-black">
+    <nav className="bg-black sm:bg-transparent sm:bg-gradient-to-b sm:from-black text-white fixed sm:h-36 w-full top-0 z-10">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <MobileMenuButton

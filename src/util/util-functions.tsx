@@ -1,12 +1,13 @@
 import React from 'react';
-import { paragraphClass } from '../styles/common-styles';
+import { p } from '../styles/common-styles';
 
 export function createListItemsFromStringArray(
-  inputArray: string[]
+  inputArray: string[],
+  className: string
 ): JSX.Element[] {
   const htmlList: JSX.Element[] = [];
   inputArray.forEach((item) => {
-    htmlList.push(<li className={paragraphClass}>{item}</li>);
+    htmlList.push(<li className={className}>{item}</li>);
   });
   return htmlList;
 }
@@ -16,7 +17,7 @@ export function createParagraphsFromStringArray(
 ): JSX.Element[] {
   const paragraphs: JSX.Element[] = [];
   inputArray.forEach((paragraph) => {
-    paragraphs.push(<p className={paragraphClass}>{paragraph}</p>);
+    paragraphs.push(<p className={`${p} mb-4`}>{paragraph}</p>);
   });
   return paragraphs;
 }

@@ -19,7 +19,7 @@ export default function Position(props: PositionProps) {
   const { company, position, time, details, initialDropdownStatus } = props;
   const [showDetails, setShowDetails] = React.useState(initialDropdownStatus);
   const detailsClass =
-    'list-disc list-disc mt-4 px-6 text-gray-400 ease-in-out';
+    'list-disc list-disc my-4 px-6 text-gray-400 ease-in-out';
   const titleMargin = showDetails ? '' : 'mb-4';
   return (
     <div>
@@ -34,7 +34,7 @@ export default function Position(props: PositionProps) {
             <h2 className={`${h3}`}>{`${position} @ ${company}`}</h2>
           </div>
         </button>
-        <h4 className="w-56 md:w-3/12 pl-6 md:pl-8 text-right text-sm">
+        <h4 className="w-56 md:w-4/12 pl-6 md:pl-8 text-right text-sm">
           {time}
         </h4>
       </div>

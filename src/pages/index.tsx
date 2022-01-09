@@ -1,8 +1,9 @@
 import * as React from 'react';
 import portrait from '../images/portrait.jpg';
 import Layout from '../components/Layout';
+import ListCard from '../components/ListCard';
 import WelcomeIntro from '../components/WelcomeIntro';
-import { h2 } from '../styles/common-styles';
+import { h2, listBorder } from '../styles/common-styles';
 
 interface WelcomeHeaderProps {
   welcomeLine1: string;
@@ -18,12 +19,12 @@ function WelcomeHeader(props: WelcomeHeaderProps) {
         <img
           src={portrait}
           alt="Simon Hoque portrait"
-          className="object-cover justify-self-center h-auto w-28 xl:w-36 rounded-full translate ease-in-out"
+          className="object-cover justify-self-center h-auto w-28 md:w-36 rounded-full translate ease-in-out"
         />
       </div>
       <div className="h-auto flex flex-col justify-center">
-        <p className="text-2xl md:text-4xl font-bold">{welcomeLine1}</p>
-        <h1 className="text-2xl md:text-4xl pb-1 font-bold">{welcomeLine2}</h1>
+        <p className="text-3xl md:text-5xl font-bold">{welcomeLine1}</p>
+        <h1 className="text-3xl md:text-5xl pb-1 font-bold">{welcomeLine2}</h1>
         <h2 className="text-md md:text-2xl text-gray-400 font-semibold">
           {welcomeSubtext}
         </h2>
@@ -41,7 +42,6 @@ export default function IndexPage() {
         welcomeSubtext="Software Engineer @ Amazon"
       />
       <WelcomeIntro />
-      <h2 className={`${h2} mt-12`}>Select Projects</h2>
     </Layout>
   );
 }

@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-navy': '#00080f',
+      },
+    },
     container: {
       padding: {
         DEFAULT: '2rem',

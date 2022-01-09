@@ -3,6 +3,7 @@ import portrait from '../images/portrait.jpg';
 import Layout from '../components/Layout';
 import WelcomeIntro from '../components/WelcomeIntro';
 import HomepageCard from '../components/HomepageCard';
+import { h2 } from '../styles/common-styles';
 
 interface WelcomeHeaderProps {
   welcomeLine1: string;
@@ -41,9 +42,7 @@ export default function IndexPage() {
         welcomeSubtext="Software Engineer @ Amazon"
       />
       <WelcomeIntro />
-      <h2 className="text-xl md:text-2xl font-semibold mt-12">
-        Select Projects
-      </h2>
+      <h2 className={`${h2} mt-12`}>Select Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-4 pt-7">
         <HomepageCard
           headerContent="Personal Website v2"

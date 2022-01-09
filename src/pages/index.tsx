@@ -1,9 +1,7 @@
 import * as React from 'react';
 import portrait from '../images/portrait.jpg';
 import Layout from '../components/Layout';
-import ListCard from '../components/ListCard';
 import WelcomeIntro from '../components/WelcomeIntro';
-import { h2, listBorder } from '../styles/common-styles';
 
 interface WelcomeHeaderProps {
   welcomeLine1: string;

@@ -5,6 +5,9 @@ module.exports = {
       colors: {
         'dark-navy': '#00080f',
       },
+      strokeWidth: {
+        1.5: '1.5',
+      },
     },
     container: {
       padding: {

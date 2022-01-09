@@ -4,19 +4,11 @@ import React from 'react';
  * Icons sourced from https://www.tablericons.com
  */
 
-interface IconProps {
-  size: string;
-  color: string;
-}
-
-export function Mail(props: IconProps) {
-  const { size, color } = props;
+export function Mail() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
-      strokeWidth="1.5"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -28,14 +20,11 @@ export function Mail(props: IconProps) {
   );
 }
 
-export function GitHub(props: IconProps) {
-  const { size, color } = props;
+export function GitHub() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
-      strokeWidth="1.5"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -46,14 +35,11 @@ export function GitHub(props: IconProps) {
   );
 }
 
-export function ExternalLink(props: IconProps) {
-  const { size, color } = props;
+export function ExternalLink() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
-      strokeWidth="1.5"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -66,14 +52,11 @@ export function ExternalLink(props: IconProps) {
   );
 }
 
-export function Documentation(props: IconProps) {
-  const { size, color } = props;
+export function Documentation() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
-      strokeWidth="1.5"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -84,6 +67,41 @@ export function Documentation(props: IconProps) {
       <line x1="9" y1="9" x2="10" y2="9" />
       <line x1="9" y1="13" x2="15" y2="13" />
       <line x1="9" y1="17" x2="15" y2="17" />
+    </svg>
+  );
+}
+
+export function Instagram() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <rect x="4" y="4" width="16" height="16" rx="4" />
+      <circle cx="12" cy="12" r="3" />
+      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+    </svg>
+  );
+}
+
+export function LinkedIn() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <rect x="4" y="4" width="16" height="16" rx="2" fill="none" />
+      <line x1="8" y1="11" x2="8" y2="16" />
+      <line x1="8" y1="8" x2="8" y2="8.01" />
+      <line x1="12" y1="16" x2="12" y2="11" />
+      <path d="M16 16v-3a2 2 0 0 0 -4 0" fill="none" />
     </svg>
   );
 }

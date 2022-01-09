@@ -5,16 +5,16 @@ import React from 'react';
  */
 
 interface IconProps {
-  size: number;
+  size: string;
+  color: string;
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export function Mail(props: IconProps) {
-  const { size } = props;
+  const { size, color } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-white icon icon-tabler icon-tabler-mail`}
+      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       fill="none"
@@ -29,11 +29,11 @@ export function Mail(props: IconProps) {
 }
 
 export function GitHub(props: IconProps) {
-  const { size } = props;
+  const { size, color } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-white icon icon-tabler icon-tabler-brand-github`}
+      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       fill="none"
@@ -47,16 +47,13 @@ export function GitHub(props: IconProps) {
 }
 
 export function ExternalLink(props: IconProps) {
-  const { size } = props;
+  const { size, color } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-white icon icon-tabler icon-tabler-external-link`}
-      width="44"
-      height="44"
+      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="#2c3e50"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -70,16 +67,13 @@ export function ExternalLink(props: IconProps) {
 }
 
 export function Documentation(props: IconProps) {
-  const { size } = props;
+  const { size, color } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`w-${size} h-${size} stroke-white icon icon-tabler icon-tabler-file-text`}
-      width="44"
-      height="44"
+      className={`w-${size} h-${size} stroke-${color}`}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="#2c3e50"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"

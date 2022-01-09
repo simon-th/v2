@@ -65,17 +65,17 @@ export default function Project(props: ProjectProps) {
       <div className="pl-6 flex gap-4 transition ease-in-out">
         {docs ? (
           <a href={docs} className="hover:scale-110">
-            <Documentation size={5} />
+            <Documentation size="6" color="white" />
           </a>
         ) : null}
         {demo ? (
           <a href={demo} className="hover:scale-110">
-            <ExternalLink size={5} />
+            <ExternalLink size="6" color="white" />
           </a>
         ) : null}
         {gitHub ? (
           <a href={gitHub} className="hover:scale-110">
-            <GitHub size={5} />
+            <GitHub size="6" color="white" />
           </a>
         ) : null}
       </div>

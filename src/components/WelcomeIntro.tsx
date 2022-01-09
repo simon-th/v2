@@ -1,20 +1,20 @@
 import React from 'react';
-import { paragraphClass, linkHoverEffectClass } from '../styles/common-styles';
+import { p, linkHoverEffect } from '../styles/common-styles';
 
 export default function WelcomeIntro() {
   return (
     <div>
-      <p className={paragraphClass}>
+      <p className={`${p} mb-4`}>
         Hi! My name is Simon and I&apos;m a recently graduated software engineer
         based in Austin, TX. I am currently working at Amazon, where I build
         cloud-native, highly scalable software to improve safety for thousands
         of Amazon employees around the globe.
       </p>
-      <p className={paragraphClass}>
+      <p className={p}>
         In my free time, I really enjoy{' '}
         <span>
           <a
-            className={linkHoverEffectClass}
+            className={linkHoverEffect}
             href="https://www.simon-th.github.io/photo"
           >
             photography
@@ -24,7 +24,7 @@ export default function WelcomeIntro() {
         coffeeshops and streets of Austin. I also love{' '}
         <span>
           <a
-            className={linkHoverEffectClass}
+            className={linkHoverEffect}
             href="https://www.simon-th.github.io/travel"
           >
             traveling

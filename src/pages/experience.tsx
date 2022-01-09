@@ -41,9 +41,9 @@ function getSkills(): JSX.Element {
 export default function ExperiencePage() {
   return (
     <Layout>
-      <h1 className={`${h1} pb-5`}>Background</h1>
+      <h1 className={`${h1}`}>Background</h1>
       {createParagraphsFromStringArray(ExperienceInfo.background)}
-      <h1 className={`${h1} py-5`}>Current Position</h1>
+      <h1 className={`${h1} mt-12`}>Current Position</h1>
       <Position
         company={ExperienceInfo.currentPosition.company}
         position={ExperienceInfo.currentPosition.position}
@@ -51,9 +51,9 @@ export default function ExperiencePage() {
         details={ExperienceInfo.currentPosition.details}
         initialDropdownStatus
       />
-      <h1 className={`${h1} py-5`}>Previous Positions</h1>
+      <h1 className={`${h1} mt-12`}>Previous Positions</h1>
       {getPreviousPositions()}
-      <h1 className={`${h1} py-5`}>Skills</h1>
+      <h1 className={`${h1} mt-12`}>Skills</h1>
       {getSkills()}
     </Layout>
   );

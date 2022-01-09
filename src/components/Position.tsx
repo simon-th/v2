@@ -45,7 +45,7 @@ export default function Position(props: PositionProps) {
         unmountOnExit
       >
         <ul className={detailsClass}>
-          {createListItemsFromStringArray(details, `${p} mb-4`)}
+          {createListItemsFromStringArray(details, `${p} mb-3`)}
         </ul>
       </CSSTransition>
     </div>

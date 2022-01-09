@@ -1,7 +1,7 @@
 [
   {
     "title": "Personal Website",
-    "description": "First iteration of my personal website, created it to showcase my work learn more about frontend technologies.",
+    "description": "First iteration of my personal website, created it to showcase my work and learn more about frontend technologies.",
     "languages": ["TypeScript"],
     "technologies": ["React"],
     "details": ["Details coming soon!"],

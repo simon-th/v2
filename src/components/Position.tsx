@@ -18,15 +18,13 @@ type PositionProps = PositionJSONProps & {
 export default function Position(props: PositionProps) {
   const { company, position, time, details, initialDropdownStatus } = props;
   const [showDetails, setShowDetails] = React.useState(initialDropdownStatus);
-  const detailsClass =
-    'list-disc list-disc my-4 px-6 text-gray-400 ease-in-out';
   const titleMargin = showDetails ? '' : 'mb-4';
   return (
     <div>
       <div className="flex justify-between">
         <button
           type="button"
-          className={`text-left ${titleMargin}`}
+          className={`text-left transition ease-in-out hover:-translate-x-1 ${titleMargin}`}
           onClick={() => setShowDetails(!showDetails)}
         >
           <div className="flex gap-3">
@@ -44,7 +42,7 @@ export default function Position(props: PositionProps) {
         classNames="dropdown"
         unmountOnExit
       >
-        <ul className={detailsClass}>
+        <ul className="list-disc my-4 px-6 text-gray-400 ease-in-out">
           {createListItemsFromStringArray(details, `${p} mb-3`)}
         </ul>
       </CSSTransition>

@@ -1,7 +1,7 @@
 {
   "background": [
     "I am currently working on cloud-native backend devlopment at Amazon, designing a database system for an internal platform tool that services thousands of API queries.",
-    "Before my I recently graduated from UT Austin, where I had the opportunity to conduct research on a neural network compression model, teach the fundamentals of software to underclassmen, and work on some really cool projects ranging from reinforcement learning to web development. I also spent a summer at Amazon building a data pipeline and learning all about AWS.",
+    "Before my current job, I recently graduated from UT Austin, where I had the opportunity to conduct research on a neural network compression model, teach the fundamentals of software to underclassmen, and work on some really cool projects ranging from reinforcement learning to web development. I also spent a summer at Amazon building a data pipeline and learning all about AWS.",
     "In my free time, I have been exploring frontend development (which led to this site!), mainly learning about React, its frameworks, and styling using CSS."
   ],
   "currentPosition": {
@@ -75,7 +75,8 @@
     "Kotlin",
     "JavaScript",
     "TypeScript",
-    "C/C++"
+    "C/C++",
+    "HTML/CSS"
   ],
   "softwareTech": [
     "Git",
@@ -83,7 +84,8 @@
     "React",
     "Node.js",
     "Docker",
-    "Google Cloud"
+    "Google Cloud",
+    "CI/CD"
   ],
   "dataTech": [
     "PyTorch",

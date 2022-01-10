@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Project, { ProjectProps } from '../components/Project';
+import Layout from '../components/layout';
+import Project, { ProjectProps } from '../components/project';
 import ProjectInfo from '../content/projects.json';
 import { h1, listBorder } from '../styles/common-styles';
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Position, { PositionJSONProps } from '../components/Position';
-import Skills from '../components/Skills';
+import Layout from '../components/layout';
+import Position, { PositionJSONProps } from '../components/position';
+import Skills from '../components/skills';
 import ExperienceInfo from '../content/experience.json';
 import { h1 } from '../styles/common-styles';
 import { createParagraphsFromStringArray } from '../util/util-functions';

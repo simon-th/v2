@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { p, linkHoverEffect } from '../styles/common-styles';
 
 export default function WelcomeIntro() {
@@ -6,9 +7,14 @@ export default function WelcomeIntro() {
     <div>
       <p className={`${p} mb-4`}>
         Hi! My name is Simon and I&apos;m a recently graduated software engineer
-        based in Austin, TX. I am currently working at Amazon, where I build
-        cloud-native, highly scalable software to improve safety for thousands
-        of Amazon employees around the globe.
+        based in Austin, TX. I am currently{' '}
+        <span>
+          <Link className={linkHoverEffect} to="/experience">
+            working
+          </Link>
+        </span>{' '}
+        at Amazon, where I build cloud-native, highly scalable software to
+        improve safety for thousands of Amazon employees around the globe.
       </p>
       <p className={p}>
         In my free time, I really enjoy{' '}
@@ -30,8 +36,8 @@ export default function WelcomeIntro() {
             traveling
           </a>
         </span>
-        , I&apos;d love to visit Japan, Iceland, and the National Parks on the
-        West Coast in the near future.
+        , and I&apos;d love to visit Japan, Iceland, and the National Parks on
+        the West Coast in the near future.
       </p>
     </div>
   );

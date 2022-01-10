@@ -1,7 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import portrait from '../images/portrait.jpg';
-import Layout from '../components/Layout';
-import WelcomeIntro from '../components/WelcomeIntro';
+import Layout from '../components/layout';
+import WelcomeIntro from '../components/welcome-intro';
 
 interface WelcomeHeaderProps {
   welcomeLine1: string;

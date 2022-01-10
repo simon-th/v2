@@ -18,7 +18,7 @@ export default function Layout({ children }: LayoutProps) {
       <div className="container mx-auto py-28 sm:py-36 xl:py-48 xl:pb-auto">
         {children}
       </div>
-      <div className="w-full flex flex-col gap-4 pb-6 md:flex-row justify-between z-5 bg-transparent md:pb-12 md:fixed md:bottom-0 px-6">
+      <div className="bottom-0 w-full flex flex-col gap-4 pb-6 md:flex-row justify-between z-5 bg-transparent md:pb-12 md:fixed md:bottom-0 px-6">
         <div className={`${sideBarClass} gap-6`}>
           <a
             href="https://www.linkedin.com/in/simon-hoque"

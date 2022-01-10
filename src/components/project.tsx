@@ -3,7 +3,6 @@ import { CSSTransition } from 'react-transition-group';
 import { Documentation, ExternalLink, GitHub } from './icons';
 import ListCard from './list-card';
 import Tag from './tag';
-import '../styles/dropdown.css';
 import { p } from '../styles/common-styles';
 import { createListItemsFromStringArray } from '../util/util-functions';
 

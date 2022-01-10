@@ -4,4 +4,5 @@ module.exports = {
     title: 'Gatsby Starter',
   },
   plugins: [`gatsby-plugin-postcss`],
+  pathPrefix: '/v2',
 };

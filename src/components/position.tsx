@@ -2,7 +2,6 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { p, h3 } from '../styles/common-styles';
 import { createListItemsFromStringArray } from '../util/util-functions';
-import '../styles/dropdown.css';
 
 export interface PositionJSONProps {
   company: string;

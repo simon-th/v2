@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .rotate-text {
+    writing-mode: vertical-lr;
+  }
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: scaleY(0.99);
+}
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 700ms, transform 700ms;
+}
+.dropdown-exit {
+  opacity: 1;
+}
+.dropdown-exit-active {
+  opacity: 0;
+  transform: scaleY(0.99);
+  transition: opacity 700ms, transform 700ms;
+}

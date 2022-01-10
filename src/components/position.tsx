@@ -27,7 +27,9 @@ export default function Position(props: PositionProps) {
           onClick={() => setShowDetails(!showDetails)}
         >
           <div className="flex gap-3">
-            <div>{`${showDetails ? `\u25be` : `\u25b8`}`}</div>
+            <div className="text-xl">{`${
+              showDetails ? `\u25be` : `\u25b8`
+            }`}</div>
             <h2 className={`${h3}`}>{`${position} @ ${company}`}</h2>
           </div>
         </button>
@@ -41,7 +43,7 @@ export default function Position(props: PositionProps) {
         classNames="dropdown"
         unmountOnExit
       >
-        <ul className="list-disc my-4 px-6 text-gray-400 ease-in-out">
+        <ul className="list-disc my-4 px-8 text-slate-400 ease-in-out">
           {createListItemsFromStringArray(details, `${p} mb-3`)}
         </ul>
       </CSSTransition>

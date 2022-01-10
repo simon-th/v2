@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  background-color: #001221;
+}
+
 .dropdown-enter {
   opacity: 0;
   transform: scaleY(0.99);

@@ -12,8 +12,8 @@ export default function Skills(props: SkillsProps) {
   return (
     <div className="mb-4 md:mb-0">
       <h3 className={`${h3} mb-3`}>{title}</h3>
-      <ul className="list-disc pl-4 text-gray-400">
-        {createListItemsFromStringArray(skillList, 'text-sm mb-1')}
+      <ul className="list-disc pl-4 text-slate-400">
+        {createListItemsFromStringArray(skillList, 'text-base mb-1')}
       </ul>
     </div>
   );

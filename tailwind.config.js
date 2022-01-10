@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-navy': '#00080f',
+        'dark-navy': '#001221',
+        highlight: '#021b30',
       },
       strokeWidth: {
         1.5: '1.5',

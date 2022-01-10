@@ -37,7 +37,7 @@ export default function Project(props: ProjectProps) {
         classNames="dropdown"
         unmountOnExit
       >
-        <ul className="list-disc my-4 px-6 text-gray-400 ease-in-out">
+        <ul className="list-disc my-4 px-6 text-slate-400 ease-in-out">
           {createListItemsFromStringArray(details, `${p} mb-3`)}
         </ul>
       </CSSTransition>
